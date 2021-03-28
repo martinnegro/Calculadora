@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Calculator";
+    src: url(Calculator.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cuerpo {
+    margin: 0;
+    padding: 0;
+    height: 560px;
+    width: 350px;
+    margin: auto;
+    margin-top: 5%;
+    border: 2px solid black;
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);  
+}
+
+.led {
+    background-color:black;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px 10px 2px 10px;
+    font-family: "Calculator";
+    text-align: end;
+    font-size: 90px;
+    color: green;
+    
+
+}
+
+#operadores {
+    margin: 2px;
+    border: 1px solid brown;
+    background-color: rgb(204, 95, 95);
+    border-radius: 5px;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suma {
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+}
+.resta {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+.mult {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+.divi {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#numeros {
+    margin: 2px;
+    border: 1px solid brown;
+    background-color: rgb(235, 210, 210);
+    border-radius: 5px;
+    color: black;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#numeros:active {
+    background-color: hsl(0, 38%, 70%);
+    margin: 5px;
+}
+
+.cero{
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+.uno {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+.dos{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+.tres{
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+.cuatro{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+.cinco{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+
+}
+.seis{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+.siete{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.ocho{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.nueve{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+.punto {
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+}
+
+#borrar {
+    margin: 2px;
+    border: 1px solid brown;
+    background-color: rgb(197, 200, 242);
+    border-radius: 5px;
+    color: black;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete {
+    grid-column: 1/ 2;
+    grid-row: 6 / 7;
+}    
+.clear{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+}
+
+#enter {
+    margin: 2px;
+    border: 1px solid brown;
+    background-color: rgb(166, 242, 167);
+    border-radius: 5px;
+    color: black;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 4 / 5;
+    grid-row: 5 / 7; 
+}
