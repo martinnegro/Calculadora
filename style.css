@@ -22,7 +22,7 @@ body {
 }
 
 .led {
-    background-color:black;
+    background-color:hsl(108, 25%, 47%);
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     border: 1px solid black;
@@ -30,8 +30,9 @@ body {
     padding: 2px 10px 2px 10px;
     font-family: "Calculator";
     text-align: end;
-    font-size: 90px;
-    color: green;
+    
+    font-size: 72px;
+    color: rgb(46, 46, 46);
     
 
 }
@@ -46,6 +47,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#operadores:active {
+    background-color: hsl(0, 52%, 50%);
+    transform: scale(0.9);
 }
 
 .suma {
@@ -79,7 +84,7 @@ body {
 
 #numeros:active {
     background-color: hsl(0, 38%, 70%);
-    margin: 5px;
+    transform: scale(0.9);
 }
 
 .cero{
@@ -139,6 +144,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+#borrar:active {
+    background-color: hsl(236, 63%, 80%);
+    transform: scale(0.9);
+}
 
 .delete {
     grid-column: 1/ 2;
@@ -162,4 +171,9 @@ body {
     justify-content: center;
     grid-column: 4 / 5;
     grid-row: 5 / 7; 
+}
+#enter:active {
+    background-color: hsl(121, 75%, 75%);
+    transform: scale(0.9);
+    box-shadow: 0 0 7px hsl(121, 75%, 75%);
 }
